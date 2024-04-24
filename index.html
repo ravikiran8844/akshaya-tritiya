@@ -249,8 +249,8 @@
                                     <!-- Total Grams -->
                                     <div class="mb-2">
                                         <label for="grams" class="form-label">Total Grams<span>*</span></label>
-                                        <input id="grams" name="grams" type="number" class="form-control"
-                                            placeholder="0.000" required>
+                                        <input id="grams" name="grams" type="text" class="form-control"
+                                            placeholder="0.000">
                                     </div>
                                     <!-- Nearest Store Location -->
                                     <div class="mb-2">
@@ -886,6 +886,18 @@
                 amountInput.value = "";
             }
         };
+
+
+          // Function to handle input in the Total Grams input field
+        const handleGramsInput = () => {
+            const gramsInput = document.getElementById("grams");
+            // Remove any non-numeric characters from the input value
+            gramsInput.value = gramsInput.value.replace(/[^\d.]/g, '');
+        };
+
+        // Add event listener to the Total Grams input field
+        document.getElementById("grams").addEventListener("input", handleGramsInput);
+
 
         // Attach event listeners
         document.getElementById("amount").addEventListener("input", handleAmountChange);
