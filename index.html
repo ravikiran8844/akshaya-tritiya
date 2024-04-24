@@ -844,7 +844,7 @@
         let goldPrice=""; 
 
           const getGoldRate= async()=>{
-            const response = await fetch("http://emerald-jewel-career.brightbridge.co/wp-json/acf/v3/options/option");
+            const response = await fetch("https://emerald-jewel-career.brightbridge.co/wp-json/acf/v3/options/option");
             if(response.ok){
             const data = await response.json();
             goldPrice=data.acf.todays_gold_price_per_gram;
