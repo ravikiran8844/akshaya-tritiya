@@ -840,8 +840,22 @@
 
 
     <script>
-        let goldPrice = 6700; // Replace this with the actual gold price fetched from the API
-        document.getElementById("gold-rate-span").textContent = goldPrice;
+
+        let goldPrice=""; 
+
+          const getGoldRate= async()=>{
+            const response = await fetch("http://emerald-jewel-career.brightbridge.co/wp-json/acf/v3/options/option");
+            if(response.ok){
+            const data = await response.json();
+            goldPrice=data.acf.todays_gold_price_per_gram;
+            console.log(data.acf.todays_gold_price_per_gram)
+            document.getElementById("gold-rate-span").textContent = goldPrice;
+
+            }
+        }
+        getGoldRate()
+
+
         const handleAmountChange = () => {
             const amountInput = document.getElementById("amount");
             const gramsInput = document.getElementById("grams");
