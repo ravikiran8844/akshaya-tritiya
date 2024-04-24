@@ -841,21 +841,21 @@
 
     <script>
 
-        let goldPrice=6705; 
+        let goldPrice=""; 
 
-        //   const getGoldRate= async()=>{
-        //     const response = await fetch("http://emerald-jewel-career.brightbridge.co/wp-json/acf/v3/options/option");
-        //     if(response.ok){
-        //     const data = await response.json();
-        //     goldPrice=data.acf.todays_gold_price_per_gram;
-        //     console.log(data.acf.todays_gold_price_per_gram)
-        //     document.getElementById("gold-rate-span").textContent = goldPrice;
+          const getGoldRate= async()=>{
+            const response = await fetch("http://emerald-jewel-career.brightbridge.co/wp-json/acf/v3/options/option");
+            if(response.ok){
+            const data = await response.json();
+            goldPrice=data.acf.todays_gold_price_per_gram;
+            console.log(data.acf.todays_gold_price_per_gram)
+            document.getElementById("gold-rate-span").textContent = goldPrice;
 
-        //     }
-        // }
-        // getGoldRate()
+            }
+        }
+        getGoldRate()
 
-        document.getElementById("gold-rate-span").textContent = goldPrice;
+        // document.getElementById("gold-rate-span").textContent = goldPrice;
 
 
 
