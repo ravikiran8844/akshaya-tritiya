@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshaya Tritiya - JewelOne</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -26,16 +27,68 @@
 
     <main class="akshatritiya-page">
 
-        <section class='container-fluid p-0'>
+        <section class='container-fluid p-0 AkshayaTritiyaSection1'>
 
             <div class='col-12'>
-                <a href="#prebookFormSection">
-                    <picture>
-                        <source srcSet="./images/main-banner-img1.webp" type="image/webp" media="(min-width: 650px)" />
-                        <img class='img-fluid' priority="true" alt="main banner"
-                            src="./images/main-banner-mob-img1.webp" height="750" width="562" />
-                    </picture>
-                </a>
+                <div class="splide home-main-slider" role="group" aria-label="main slider">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="AkshayaTritiyaSection1-mob-video">
+                                    <video
+                                    class="img-fluid"
+                                      autoPlay
+                                      loop
+                                      muted
+                                      playsInline
+                                      controls
+                                      poster="/images/AkshayaTritiyaSection1-mob-video-poster.jpg"
+                                      height="867"
+                                      width="650"
+                                    >
+                                      <source
+                                        src="/images/main-slider-video1-mob.mp4"
+                                        type="video/mp4"
+                                      >
+                                    </video>
+                                  </div>
+                        
+                                  <div class="AkshayaTritiyaSection1-large-video">
+                                    <video
+                                    class="img-fluid"
+                                      autoPlay
+                                      loop
+                                      muted
+                                      playsInline
+                                      controls
+                                      poster="/images/AkshayaTritiyaSection1-video-poster.jpg"
+                                      height="688"
+                                      width="1920"
+                                    >
+                                      <source
+                                        src="/images/main-slider-video1.mp4"
+                                        type="video/mp4"
+                                      >
+                                    </video>
+                                  </div>
+                              </li>
+
+                              <li class="splide__slide">
+                                <a href="#prebookFormSection">
+                                    <picture>
+                                        <source srcSet="./images/at-main-banner1.webp" type="image/webp" media="(min-width: 650px)" />
+                                        <img class='img-fluid' priority="true" alt="main banner"
+                                            src="./images/main-banner-mob-img1.webp"   
+                                            height="867"
+                                            width="650" />
+                                    </picture>
+                                </a>
+                              </li>
+                          </ul>
+                    </div>
+                  </div>
+
+               
             </div>
 
         </section>
@@ -90,6 +143,39 @@
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img1.png" width="576" height="577"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img2.png" width="576" height="577"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img3.png" width="576" height="577"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img4.jpg" width="576" height="577"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img5.webp" width="576" height="577"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img6.webp" width="576" height="577"
+                                            alt>
+
+                                    </li>
+
+
+
+                                    <li class="splide__slide">
                                         <img class="img-fluid" src="images/section3-img1.webp" width="576" height="577"
                                             alt>
 
@@ -126,6 +212,36 @@
                         <div class="splide AkshayaTritiyaSection3__thumb-slider" role="group" aria-label="thumb slider">
                             <div class="splide__track">
                                 <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img1.png" width="274" height="270"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img2.png" width="274" height="270"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img3.png" width="274" height="270"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img4.jpg" width="274" height="270"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img5.webp" width="274" height="270"
+                                            alt>
+
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img class="img-fluid" src="images/at-collection-img6.webp" width="274" height="270"
+                                            alt>
+
+                                    </li>
                                     <li class="splide__slide">
                                         <img class="img-fluid" src="images/section3-img1.webp" width="274" height="270"
                                             alt>
@@ -761,6 +877,10 @@
     </script>
 
     <script>
+
+        let homeMainSlider = new Splide( '.home-main-slider' ).mount();
+
+
         let section2Swiper = new Swiper(".akshatritiyasection2-swiper", {
             slidesPerView: 1.2,
             spaceBetween: 10,
