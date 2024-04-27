@@ -330,20 +330,10 @@
                                         <label for="location" class="form-label">Nearest
                                             Store
                                             Location<span>*</span></label>
-                                        <select name="location" required class="form-select">
-                                            <option value="Coimbatore">Coimbatore</option>
-                                            <option value="Experience Center">Experience
-                                                Center</option>
-                                            <option value="Chennai">Chennai</option>
-                                            <option value="Madurai">Madurai</option>
-                                            <option value="Vellore">Vellore</option>
-                                            <option value="Ramanathapuram">Ramanathapuram</option>
-                                            <option value="Salem">Salem</option>
-                                            <option value="Erode">Erode</option>
-                                            <option value="Pollachi">Pollachi</option>
-                                            <option value="Pondicherry">Pondicherry</option>
-                                            <option value="Hosur">Hosur</option>
-                                            <option value="Udumalaipettai">Udumalaipettai</option>
+                                        <select name="location" required class="form-select" id="store-locations">
+                                            <option value="" disabled selected>
+                                                Enter your location
+                                            </option>
                                         </select>
                                     </div>
                                     <!-- Checkbox for Terms & Conditions -->
@@ -405,7 +395,7 @@
             </div>
         </section>
 
-        <section class="AkshayaTritiyaSection5 position-relative">
+        <!-- <section class="AkshayaTritiyaSection5 position-relative">
             <div class=" position-absolute top-0">
                 <img width="1920" height="221" class="img-fluid w-100" src="images/section5-top-img.png"
                     alt="overlay image" />
@@ -641,7 +631,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
@@ -820,6 +810,33 @@
         document.getElementById("current-year").textContent = year;
 
     </script>
+
+
+<script>
+    const storesData = [
+  {"id": 1, "name": "Dhali Road, Udumalaipettai"},
+  {"id": 2, "name": "Anna Nagar, Chennai"},
+  {"id": 3, "name": "Experience Center, Coimbatore"},
+  {"id": 4, "name": "Kamaraj Salai, Puducherry"},
+  {"id": 5, "name": "Bazaar Street, Pollachi"},
+  {"id": 6, "name": "RKV Road, Erode"},
+  {"id": 7, "name": "Anna Salai, Vellore"},
+  {"id": 8, "name": "Netaji Road, Madurai"},
+  {"id": 9, "name": "Kenikarai, Ramanathapuram"},
+  {"id": 10, "name": "Opp. Hosur Bus Stand, Hosur"},
+  {"id": 11, "name": "Swarnapuri, Salem"}
+]
+
+let selectEl = document.getElementById("store-locations");
+
+    storesData.forEach((store) => {
+        let option = document.createElement("option");
+        option.textContent = store.name;
+        option.value = store.id;
+        selectEl.appendChild(option);
+    });
+
+</script>
 
     <script>
 
