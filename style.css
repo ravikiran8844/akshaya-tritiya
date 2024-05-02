@@ -7,7 +7,7 @@ body{
     background: #F6F6F6 !important;
     max-width: 1920px;
     margin: auto;
-    overflow-x: hidden;
+    overflow-x: hidden;;
   }
   .container{
     margin: auto;
@@ -462,3 +462,24 @@ font-size: 14px;
   
     }
   } */
+
+
+
+  .prebook-btn{
+    border-radius: 5.381px;
+    background: linear-gradient(89deg, #A0222C 0.88%, #DBA41D 119.37%);
+    color: #fff !important;
+    width: fit-content;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link{
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 12.556px */
+text-transform: uppercase;
+  }
